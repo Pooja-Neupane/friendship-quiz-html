@@ -1,0 +1,96 @@
+:root {
+  --bg-color: #fdf0f0;
+  --text-color: #333;
+  --btn-bg: #e91e63;
+  --btn-hover: #c2185b;
+  --card-bg: white;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #fdfdfd;
+  --btn-bg: #bb86fc;
+  --btn-hover: #9b68df;
+  --card-bg: #1f1f1f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.quiz-container {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--btn-bg);
+}
+
+.question {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.question p {
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: var(--btn-bg);
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: var(--btn-hover);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#progress {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
